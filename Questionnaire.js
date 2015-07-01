@@ -69,7 +69,7 @@ function Initialize() {
 	if (navigator.onLine) {
 		$.ajax({ 
 			type: 'GET', 
-			url: 'GetQandA.cfm', 			
+			url: 'data.json',  //Switch this to 'GetQandA.cfm' to pull questions from a database, 			
 			dataType: 'json',
 			error: errFunc,
 			success: saveQandA
