@@ -1,8 +1,13 @@
 # Questionnaire
 
-Questions and Answers are pulled from a database using a ColdFusion backend, or can be read from a json text file.
+A Questionnaire form that can be used offline.
+
+Questions and Answers are pulled from a database using a ColdFusion backend while on network, or can be read from a local json text file.
+
 Multiple questionnaire forms can be used.
+
 At start up it reads in a form called HOME, which can be a "menu" form, (selecting which other form to load next.)
+
 Sample data in data.json shows the format for questions and answers.
 Each Form has multiple questions (QuID) which can be of several types:
 * header: displays text.
