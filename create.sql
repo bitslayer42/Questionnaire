@@ -1,7 +1,7 @@
 CREATE TABLE [dbo].[QuestionnaireQuestion](
 	[FormID] [varchar](10) NOT NULL,
 	[QuID] [int] NOT NULL,
-	[Type] [varchar](10) NULL,
+	[Type] [varchar](10) NULL CHECK(type IN ('header','menu','text','checkbox','textarea','radio','text5')),
 	[QuestionText] [varchar](8000) NULL,
 	[Required] [bit] NULL,
  CONSTRAINT [PK_QuestionnaireQuestion] PRIMARY KEY CLUSTERED 
